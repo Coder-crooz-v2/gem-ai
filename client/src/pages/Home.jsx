@@ -12,7 +12,7 @@ const Home = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       setLoading(true);
-      await fetch('http://localhost:8080/api/v1/posts', {
+      await fetch('https://gem-ai.onrender.com/api/v1/posts', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'
